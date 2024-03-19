@@ -1,2 +1,2 @@
-# Mood
+# Project Why Bandung?
 (coming soon)
