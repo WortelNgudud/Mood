@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #454545;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel__buttons {
+    margin: 10px 0;
+    display: flex;
+    width: 80%;
+  }
+  .carousel__buttons .carousel-button:focus {
+    background-color: rgb(154, 163, 247);
+  }
+  .carousel__buttons .carousel-button:hover {
+    background-color: #ddd;
+  }
+  .carousel__buttons .carousel-button:not(:nth-last-child()) {
+    margin-right: 10px;
+  }
+  .carousel__buttons .carousel-button {
+    font-size: 1rem;
+    margin-right: 10px;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #702222;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+
+  .carousel {
+    width: 80%;
+    overflow: hidden;
+    display: grid;
+    border-radius: 5px;
+    padding: 20px;
+    grid-template-columns: repeat(6, 90%);
+  }
+  .carousel .carousel__item.active {
+    transform: scale(1) translateX(-0%);
+  }
+  .carousel .carousel__item {
+    width: 100%;
+    transform: translateX(-0%) scale(0.9);
+    border-radius: 5px;
+    transition: all 0.7s ease;
+    display: flex;
+
+
+    text-transform: uppercase;
+    justify-content: center;
+
+    align-items: center;
+    padding: 10px;
+    height: 200px;
+  }
+  .bg-yellow.active {
+    background-color: transparent;
+  }
+  .bg-brown.active {
+    background-color: transparent;
+  }
+  .bg-green.active {
+    background-color: transparent;
+  }
+  .bg-blue.active {
+    background-color: transparent;
+  }
+  h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+  }
+
+  .button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #25a899;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+    padding: 10px 24px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    }
+  
+  .button:hover {
+    background-color: #f05fdd;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
